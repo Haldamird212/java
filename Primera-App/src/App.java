@@ -25,7 +25,7 @@ public class App {
 
         // metodos de String
 
-        String texto = "Esto es un texto largo dentro de un String";
+        String texto = "   Esto es un texto largo dentro de un String   ";
 
         // length()
         int longitud = texto.length();
@@ -52,6 +52,63 @@ public class App {
         System.out.println(indice);
 
         // replace()
-        texto.re
+        String reemplazo = texto.replace("texto", "parrafo");
+        System.out.println(reemplazo);
+        
+        //contains
+        boolean isContain = texto.contains("String");
+        System.out.println("¿Tiene la palabra String? " + isContain);
+
+        //trim
+        String sinEspacios = texto.trim();
+        System.out.println(sinEspacios);
+
+        /*
+         * OPERADORES
+         * 
+         * + suma
+         * - resta
+         * * multiplicación
+         * / división
+         * % módulo
+         * = asignacion
+         * ++ incremental
+         * -- decremental
+         * == igual que
+         * != distinto que
+         * > mayor que
+         * < menor que
+         * && and
+         * || or
+         * ! not
+         */
+
+         // IF ELSE
+        int edad = 19;
+
+        if(edad > 18){
+            System.out.println("Puedes entrar a la disco");
+        } else if(edad == 18){
+            System.out.println("Tienes la edad justa para entrar");
+        } else {
+            System.out.println("No tienes edad sufucuente para entrar");
+        }
+
+        // SWITCH
+        String bebida = "café";
+
+        switch (bebida) {
+            case "café":
+                System.out.println("A mi tambien me gusta el café");
+                break;
+
+            case "mate":
+                System.out.println("Debes ser argentino, paraguayo o uruguayo");
+                break;
+        
+            default:
+                break;
+        }
+
     }
 }
